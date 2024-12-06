@@ -1,0 +1,118 @@
+.footer {
+  background-color: $color_p3;
+  padding: 50px 0;
+  font-size: 15px;
+  color: rgb(227, 227, 227);
+
+  position: relative;
+  .bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/assets/svg/hreo_pattern.svg");
+    background-size: 500px;
+    opacity: 0.2;
+    z-index: 1;
+  }
+
+  .wrap {
+    padding: 0 100px;
+    position: relative;
+    z-index: 100;
+
+    .logo {
+      width: fit-content;
+      margin: 40px auto;
+      img {
+        width: 500px;
+      }
+    }
+  }
+
+  .pages {
+    display: flex;
+    justify-content: center;
+    // gap: 20px;
+    margin: 16px 0;
+    span {
+      margin: 0 20px;
+      color: $color_p1;
+    }
+
+    a {
+      color: white;
+      font-size: 18px;
+      // font-weight: 400;
+      &:hover {
+        color: $color_p1;
+      }
+    }
+  }
+
+  .text {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 16px;
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      > div {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .tc {
+    display: flex;
+    justify-content: space-between;
+    a {
+      color: grey;
+      font-size: 14px;
+    }
+  }
+
+  @include respond-below(md) {
+    .wrap {
+      padding: 0;
+
+      .logo {
+        width: 100%;
+      }
+
+      .pages {
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+
+        span {
+          display: none;
+        }
+      }
+
+      .bottom {
+        flex-direction: column;
+
+        .left {
+          flex-direction: column;
+          gap: 10px;
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+}

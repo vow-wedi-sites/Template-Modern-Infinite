@@ -1,0 +1,31 @@
+.CountDownSection {
+  background-color: rgb(0, 0, 0);
+  padding: 100px 0;
+  .wrap {
+    position: relative;
+    z-index: 10;
+    color: white;
+    flex-direction: column;
+
+    @include flexCenter;
+
+    h1{
+        font-size: 70px;
+    }
+
+    svg{
+      font-size: 40px;
+    }
+
+    p{
+      font-size: 22px;
+    }
+    
+  }
+
+  @include respond-below(md) {
+    .wrap {
+     text-align: center;
+    }
+  }
+}

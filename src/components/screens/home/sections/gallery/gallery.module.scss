@@ -1,0 +1,24 @@
+// photo_shoot_video_bg.jpg
+
+.GallerySection {
+  background-color: $color_p1;
+  position: relative;
+  z-index: 10;
+  background-color: white;
+  padding: 70px 0;
+  
+}
+
+.Gallery {
+  min-height: 130dvh;
+
+  @include respond-below(md) {
+    min-height: 100dvh;
+  }
+
+  // figure {
+  //   img {
+  //     border-radius: 10px;
+  //   }
+  // }
+}

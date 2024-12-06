@@ -1,0 +1,29 @@
+.QuoteSection {
+  //   height: 500px;
+  background-color: $color_p2;
+  z-index: 10;
+  position: relative;
+
+  .cont {
+    position: relative;
+    text-align: center;
+    padding-bottom: 50px;
+    color: white;
+
+    .q1 {
+      font-size: 40px;
+      padding: 50px 0px;
+      // color: $color_p3 !importan;
+      color: black;
+    }
+  }
+
+  @include respond-above(md) {
+    .cont {
+      .q1 {
+        font-size: 50px;
+        padding: 50px 120px;
+      }
+    }
+  }
+}

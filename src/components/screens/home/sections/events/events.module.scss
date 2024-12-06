@@ -1,0 +1,51 @@
+.EventsSection {
+  z-index: 10;
+  position: relative;
+  background-color: $color_p3;
+  padding: 70px 0;
+
+  .wrap {
+    .event {
+      margin: 20px;
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      overflow: hidden;
+      cursor: pointer;
+
+      .text {
+        padding: 24px;
+        background-color: white;
+
+        h3 {
+          margin-bottom: 20px;
+          font-size: 25px;
+        }
+        p {
+          margin-bottom: 12px;
+          color: $color_p4;
+
+          svg {
+            margin-top: -4px;
+            margin-right: 4px;
+            color: $color_p1;
+          }
+        }
+      }
+
+
+      &:hover {
+        div {
+          overflow: hidden;
+        }
+        img {
+          transform: scale(1.2);
+          transition-duration: 0.5s;
+        }
+      }
+    }
+    @include respond-below(md) {
+      .event {
+        margin: 20px 0;
+      }
+    }
+  }
+}

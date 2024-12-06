@@ -1,0 +1,39 @@
+.RSVP_Section {
+  padding-bottom: 50px;
+  .wrap {
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+        background-color: $color_p2;
+      padding: 20px;
+      max-width: 700px;
+      margin: auto;
+      border-radius: 4px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      position: relative;
+
+      h1 {
+        text-align: center;
+        color: $color_p1;
+        font-size: 60px;
+        font-weight: 800;
+        position: relative;
+        z-index: 10;
+      }
+
+      input,
+      textarea,
+      button {
+        padding: 4px 10px;
+        font-size: 20px;
+        border-radius: 4px;
+        border: none;
+        outline: none;
+        color: $color_p2;
+        position: relative;
+        z-index: 10;
+      }
+    }
+  }
+}

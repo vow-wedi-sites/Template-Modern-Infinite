@@ -1,0 +1,82 @@
+.BrideGroomSection {
+  position: relative;
+  padding: 100px 0;
+  z-index: 10;
+  background-color: $color_p3;
+
+  .wrap {
+    .box {
+      display: flex;
+      gap: 20px;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+      &.box1 {
+        .text {
+          text-align: right;
+
+          h2 {
+            justify-content: right;
+          }
+        }
+      }
+
+      .text {
+        h2 {
+          font-size: 30px;
+          font-weight: normal;
+          letter-spacing: 4px;
+          display: flex;
+          align-items: center;
+          gap: 4px;
+
+          span {
+            font-size: 20px;
+          }
+        }
+        span {
+          color: $color_p1;
+          font-size: 28px;
+        }
+      }
+
+      .img {
+        img {
+          border-radius: 50%;
+          border: 5px solid $color_p1;
+        }
+      }
+    }
+  }
+
+  .info {
+    text-align: center;
+    margin-top: 80px;
+    h1 {
+      color: $color_p1;
+      font-size: 50px;
+    }
+    p {
+      font-size: 22px;
+    }
+  }
+
+  @include respond-below(md) {
+    .wrap {
+      .box {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .text {
+          text-align: center !important;
+          h2 {
+            justify-content: center !important;
+          }
+        }
+      }
+    }
+  }
+}

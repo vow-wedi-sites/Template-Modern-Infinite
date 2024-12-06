@@ -1,0 +1,46 @@
+.FriendsAndFamilySection {
+  position: relative;
+  z-index: 10;
+  background-color: $color_p3;
+
+  .cont {
+    padding: 100px;
+
+   
+
+    .wrap {
+      .box {
+        background-color: white;
+        display: flex;
+        padding: 24px;
+        gap: 20px;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        border-radius: 10px;
+        .img {
+          img {
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            border-radius: 50%;
+          }
+        }
+
+        h3 {
+          margin: 0;
+        }
+        span {
+          font-size: 30px;
+          color: $color_p1;
+        }
+        
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  @include respond-below(md) {
+    .cont {
+      padding: 100px 0;
+    }
+  }
+}
