@@ -8,19 +8,18 @@ const RSVP_Section = () => {
   return (
     <section id="rsvp" className={styles.RSVP_Section}>
       <CustomContainer>
-        <CustomSection head="Your Presence Matters">
-          <div className={styles.wrap}>
-            <form>
-              <div className={styles.bg}></div>
-              <h1 className={fonts.rouge_Script}>RSVP</h1>
-              <input type="text" name="" id="" placeholder="Full Name" />
-              <input type="text" name="" id="" placeholder="Phone Number" />
-              <input type="number" name="" id="" placeholder="No. Of Members" />
-              <textarea name="message" id="" placeholder="Message"></textarea>
-              <button>SEND</button>
-            </form>
-          </div>
-        </CustomSection>
+        <div className={styles.wrap}>
+          <form>
+            <div className={styles.bg}></div>
+            <h1 className={fonts.font1}>Will you attend?</h1>
+            <p className={fonts.font3}>R.S.V.P</p>
+            <input type="text" name="" id="" placeholder="Full Name" />
+            <input type="text" name="" id="" placeholder="Phone Number" />
+            <input type="number" name="" id="" placeholder="No. Of Members" />
+            <textarea name="message" id="" placeholder="Message"></textarea>
+            <button>SEND</button>
+          </form>
+        </div>
       </CustomContainer>
     </section>
   );

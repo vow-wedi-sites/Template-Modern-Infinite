@@ -24,6 +24,7 @@ const HomeScreen = () => {
       <InviteSection/>
       <EventsSection/>
       <GallerySection/>
+      <RSVP_Section/>
     
       {/* <EventsSection />
       <DestinationsSection/>

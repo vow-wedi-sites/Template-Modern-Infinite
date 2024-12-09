@@ -1,21 +1,23 @@
 .footer {
-  background-color: $color_p3;
+  background-color: $color_mb;
   padding: 50px 0;
   font-size: 15px;
   color: rgb(227, 227, 227);
+  position: relative;
+  z-index: 10;
 
   position: relative;
-  .bg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("/assets/svg/hreo_pattern.svg");
-    background-size: 500px;
-    opacity: 0.2;
-    z-index: 1;
-  }
+  // .bg {
+  //   position: absolute;
+  //   left: 0;
+  //   top: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background-image: url("/assets/svg/hreo_pattern.svg");
+  //   background-size: 500px;
+  //   opacity: 0.2;
+  //   z-index: 1;
+  // }
 
   .wrap {
     padding: 0 100px;
@@ -59,10 +61,12 @@
 
   .bottom {
     display: flex;
+    position: relative;
+    position: relative;
+    
+    z-index: 100;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    z-index: 100;
 
     .left {
       display: flex;

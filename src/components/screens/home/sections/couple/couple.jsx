@@ -13,7 +13,7 @@ const BrideGroomSection = () => {
         <div className={styles.wrap}>
           <Row>
             <Col md={6}>
-              <div className={`${styles.box} ${styles.box1}`}>
+              <div className={`${styles.box} ${styles.box1}`} data-aos='fade-right'>
                 <div className={styles.text}>
                   <h2 className={fonts.font3}>
                     {EVENT_DETAILS.bride.name}
@@ -30,7 +30,7 @@ const BrideGroomSection = () => {
               </div>
             </Col>
             <Col md={6}>
-              <div className={styles.box}>
+              <div className={styles.box} data-aos='fade-left'>
                 <div className={styles.img}>
                   <Image src={EVENT_DETAILS.groom.imgUrl} width={250} />
                 </div>
@@ -48,7 +48,7 @@ const BrideGroomSection = () => {
             </Col>
           </Row>
         </div>
-        <div className={styles.info}>
+        <div className={styles.info} data-aos='fade-up'>
           <h1 className={fonts.font1}>Are Getting Married!</h1>
           <p className={fonts.font3}>{EVENT_DETAILS.events.wedding.date}</p>
         </div>

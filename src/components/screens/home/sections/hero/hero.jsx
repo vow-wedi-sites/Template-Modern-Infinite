@@ -12,11 +12,11 @@ const HeroSection = () => {
       <CustomContainer>
         <div className={styles.wrap}>
           <div>
-            <h1 className={fonts.font1}>
+            <h1 className={fonts.font1} data-aos='fade-down'>
               {EVENT_DETAILS.groom.name} <br />& <br />
               {EVENT_DETAILS.bride.name}
             </h1>
-            <p>{EVENT_DETAILS.events.wedding.date}</p>
+            <p data-aos='fade-up'>{EVENT_DETAILS.events.wedding.date}</p>
           </div>
         </div>
       </CustomContainer>
