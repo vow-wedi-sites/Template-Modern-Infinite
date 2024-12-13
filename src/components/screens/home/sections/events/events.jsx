@@ -30,7 +30,7 @@ const EventsSection = () => {
                 <Col key={event.name} xs={12} md={4}>
                   <div className={styles.event}>
                     <div>
-                      <Image src="/assets/images/City.jpg" fluid />
+                      <Image src={event.location_img} height={250} />
                     </div>
                     <div className={styles.text}>
                       <h3 className={fonts.font3}>{event.name}</h3>

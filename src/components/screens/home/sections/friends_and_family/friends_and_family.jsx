@@ -17,30 +17,30 @@ import { Pagination, Autoplay, Navigation } from "swiper/modules";
 const FriendsAndFamilySection = () => {
   const fam = [
     {
-      name: "Rahul Gowtham",
+      name: "Karthik",
       id: "dmkd",
       type: "Friend",
       about:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, ex.",
     },
     {
-      name: "Rahul Gowtham",
-      id: "dmkd",
-      type: "Friend",
+      name: "Aravind",
+      id: "aodomlamde",
+      type: "Cousin",
       about:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, ex.",
     },
     {
-      name: "Rahul Gowtham",
-      id: "dmkd",
-      type: "Friend",
+      name: "Surya Kumar",
+      id: "aeppppae",
+      type: "Brother",
       about:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, ex.",
     },
     {
-      name: "Rahul Gowtham",
-      id: "dmkd",
-      type: "Friend",
+      name: "Santhosh",
+      id: "dmlsm",
+      type: "Colleague",
       about:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, ex.",
     },
@@ -71,7 +71,6 @@ const FriendsAndFamilySection = () => {
                 delay: 1500,
                 disableOnInteraction: true,
               }}
-              
               breakpoints={{
                 640: {
                   slidesPerView: 1,
@@ -94,15 +93,12 @@ const FriendsAndFamilySection = () => {
                   <SwiperSlide key={f.id}>
                     <div className={styles.box}>
                       <div className={styles.img}>
-                        <Image src="/assets/groom.jpg" width={120} />
+                        <Image src={`/assets/images/fam/${f.name}.jpg`} width={120} alt="omg"/>
                       </div>
                       <div>
-                        <h3 className={fonts.font3}>Rahul Goutham</h3>
-                        <span className={fonts.font1}>Friend</span>
-                        <p>
-                          Lorem ipsum dolor sit, amet consectetur adipisicing
-                          elit. Debitis, ex.
-                        </p>
+                        <h3 className={fonts.font3}>{f.name}</h3>
+                        <span className={fonts.font1}>{f.type}</span>
+                        <p>{f.about}</p>
                       </div>
                     </div>
                   </SwiperSlide>
