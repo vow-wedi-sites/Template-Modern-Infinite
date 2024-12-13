@@ -68,9 +68,10 @@ const FriendsAndFamilySection = () => {
               loop
               navigation={true}
               autoplay={{
-                delay: 2000,
+                delay: 1500,
                 disableOnInteraction: true,
               }}
+              
               breakpoints={{
                 640: {
                   slidesPerView: 1,
