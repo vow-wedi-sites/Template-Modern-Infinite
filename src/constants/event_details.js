@@ -18,6 +18,7 @@ const EVENT_DETAILS = {
       place: ["CK Mahal", "Gandhipuram West", "Coimbatore - 641029"],
       text: "a blend of strength and tenderness, emanates a captivating charm that lights up every room. His unwavering support and love serve as a pillar for all who know him, his charismatic presence leaving an indelible mark on the hearts of those he encounters.",
       location: "CK",
+      dateTime : "6/13/2025, 1:38:06 PM"
     },
   },
 

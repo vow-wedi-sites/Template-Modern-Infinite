@@ -6,15 +6,15 @@
   .cont {
     padding: 100px;
 
-   
-
     .wrap {
       .box {
         background-color: white;
+        width: 500px;
         display: flex;
+        margin-bottom: 50px;
+
         padding: 24px;
         gap: 20px;
-        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
         border-radius: 10px;
         .img {
           img {
@@ -30,9 +30,17 @@
           font-size: 30px;
           color: $color_p1;
         }
-        
+
         p {
           font-size: 15px;
+        }
+        transform: scale(0.8);
+      }
+
+      div[class*="swiper-slide-active"] {
+        > div {
+          transform: scale(1.05);
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
       }
     }
@@ -41,6 +49,22 @@
   @include respond-below(md) {
     .cont {
       padding: 100px 0;
+
+      .wrap {
+        div[class*="swiper-slide-active"] {
+          > div {
+            transform: scale(0.9);
+          }
+        }
+        .box {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          // margin: auto;
+          width: 100%;
+        }
+      }
     }
   }
 }

@@ -9,17 +9,19 @@ import Router from "next/router";
 import styles from "../styles/Home.module.scss";
 import fonts from "@/styles/fonts";
 import Layout from "@/components/layout/layout";
-import { SessionProvider } from "next-auth/react";
-import { GoogleTagManager } from "@next/third-parties/google";
+import LoadingScreen from "@/components/ui/loading_screen/loading_screen";
 
-export default function App({ Component, pageProps }) {
-  const [admin, setAdmin] = useState(null);
-
+export default function App({ Component }) {
+  const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     Aos.init({
       duration: 1000,
       once: false,
     });
+
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1900);
   }, []);
 
   useEffect(() => {
@@ -35,18 +37,14 @@ export default function App({ Component, pageProps }) {
     };
   }, []);
 
-  const isConstruction = false;
-
   return (
-    <SessionProvider session={pageProps.session}>
-      <>
-        <main className={`${styles.main} ${fonts.MainFont}`}>
-          <Layout>
-            <Component {...pageProps} admin={admin} />
-            <GoogleTagManager gtmId="G-5J5WCQLL52" />
-          </Layout>
-        </main>
-      </>
-    </SessionProvider>
+    <>
+      {isLoading && <LoadingScreen />}
+      <main className={`${styles.main} ${fonts.MainFont}`}>
+        <Layout>
+          <Component />
+        </Layout>
+      </main>
+    </>
   );
 }

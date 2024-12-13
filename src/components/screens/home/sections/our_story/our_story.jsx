@@ -13,37 +13,39 @@ const OurStorySection = () => {
             <Col xs={12} md={5}>
               <div className={styles.img}>
                 <div>
-                  <div className={styles.border}>dgknskr</div>
-                  <Image src="/assets/images/story-image.jpg" />
+                  <div className={styles.border}/>
+                  <Image src="/assets/images/story-image.jpg" data-aos='fade-right'/>
                 </div>
               </div>
             </Col>
             <Col xs={12} md={7}>
               <div className={styles.text}>
-                <SectionHeading heading="Our Story" caption="Our Stroy" />
+                <div data-aos='fade-left'>
+                  <SectionHeading heading="Our Story" caption="Our Stroy" />
+                </div>
                 <br />
                 <div className={styles.content}>
-                  <p>
+                  <p data-aos='fade-left'>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Quibusdam ut atque, commodi illo sit temporibus cupiditate
                     doloribus fugit rem pariatur reiciendis! Doloremque incidunt
                     quam quia fugiat rerum asperiores velit esse!
                   </p>
-                  <p>
+                  <p data-aos='fade-left'>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Quibusdam ut atque, commodi illo sit temporibus cupiditate
                     doloribus fugit rem pariatur reiciendis! Doloremque incidunt
                     quam quia fugiat rerum asperiores velit esse!
                   </p>
-                  <p>
+                  <p data-aos='fade-left'>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Quibusdam ut atque, commodi illo sit temporibus cupiditate
                     doloribus fugit rem pariatur reiciendis! Doloremque incidunt
                     quam quia fugiat rerum asperiores velit esse!
                   </p>
                   <br />
-                  <h4>Dec 5th, 2023, We Said Yes!</h4>
-                  <p>
+                  <h4 data-aos='fade-left'>Dec 5th, 2023, We Said Yes!</h4>
+                  <p data-aos='fade-left'>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Unde, illo corporis eligendi voluptas distinctio quidem?
                     Corporis nulla explicabo repellat temporibus?

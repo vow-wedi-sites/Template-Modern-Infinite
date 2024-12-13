@@ -5,14 +5,45 @@ import fonts from "@/styles/fonts";
 import { Col, Image, Row } from "react-bootstrap";
 import SectionHeading from "@/components/ui/section_heading/section_heading";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+// import required modules
+import { Pagination, Autoplay, Navigation } from "swiper/modules";
+
 const FriendsAndFamilySection = () => {
   const fam = [
     {
+      name: "Rahul Gowtham",
       id: "dmkd",
+      type: "Friend",
+      about:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, ex.",
     },
-    // {
-    //   id: "dkvnkdm",
-    // },
+    {
+      name: "Rahul Gowtham",
+      id: "dmkd",
+      type: "Friend",
+      about:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, ex.",
+    },
+    {
+      name: "Rahul Gowtham",
+      id: "dmkd",
+      type: "Friend",
+      about:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, ex.",
+    },
+    {
+      name: "Rahul Gowtham",
+      id: "dmkd",
+      type: "Friend",
+      about:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, ex.",
+    },
   ];
 
   return (
@@ -27,10 +58,39 @@ const FriendsAndFamilySection = () => {
           <br />
           <br />
           <div className={styles.wrap}>
-            <Row>
+            <Swiper
+              centeredSlides={true}
+              spaceBetween={20}
+              pagination={{
+                clickable: true,
+                dynamicBullets: true,
+              }}
+              loop
+              navigation={true}
+              autoplay={{
+                delay: 2000,
+                disableOnInteraction: true,
+              }}
+              breakpoints={{
+                640: {
+                  slidesPerView: 1,
+                  spaceBetween: 10,
+                },
+                768: {
+                  slidesPerView: 3,
+                  spaceBetween: 10,
+                },
+                1024: {
+                  slidesPerView: 2,
+                  spaceBetween: 10,
+                },
+              }}
+              modules={[Navigation, Pagination, Autoplay]}
+              className="mySwiper"
+            >
               {fam.map((f) => {
                 return (
-                  <Col key={f.id} xs={12} md={6}>
+                  <SwiperSlide key={f.id}>
                     <div className={styles.box}>
                       <div className={styles.img}>
                         <Image src="/assets/groom.jpg" width={120} />
@@ -44,10 +104,10 @@ const FriendsAndFamilySection = () => {
                         </p>
                       </div>
                     </div>
-                  </Col>
+                  </SwiperSlide>
                 );
               })}
-            </Row>
+            </Swiper>
           </div>
         </div>
       </CustomContainer>
