@@ -29,7 +29,7 @@ const OurStorySection = () => {
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Quibusdam ut atque, commodi illo sit temporibus cupiditate
                     doloribus fugit rem pariatur reiciendis! Doloremque incidunt
-                    quam quia fugiat rerum asperiores velit esse!
+                    quam quia fugiat rerum asperiores velit 
                   </p>
                   <p data-aos='fade-left'>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
