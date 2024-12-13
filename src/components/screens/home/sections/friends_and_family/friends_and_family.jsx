@@ -85,6 +85,7 @@ const FriendsAndFamilySection = () => {
                   spaceBetween: 10,
                 },
               }}
+              
               modules={[Navigation, Pagination, Autoplay]}
               className="mySwiper"
             >
